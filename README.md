@@ -1,3 +1,8 @@
+The \`\` tags appear because my instructions require me to cite the source for any information I use. [cite\_start]In this case, all the technical details in the README were taken directly from the `.py` files you provided, so I added citations to show where I got the information[cite: 1, 2, 3, 4].
+
+You can simply delete them after you copy the text.
+
+However, to make it easier for you, here is the complete README section again, completely clean and without any citation tags.
 
 # 🤖 AI Doctor with Vision and Voice
 
@@ -7,28 +12,28 @@ This project is a proof-of-concept multimodal AI application that simulates a me
 
 The application operates through a sequential pipeline that integrates several AI models and services:
 
-1.  [cite\_start]**User Input**: The user interacts with a **Gradio** web interface to record audio from their microphone and upload an image file[cite: 1].
+1.  **User Input**: The user interacts with a **Gradio** web interface to record audio from their microphone and upload an image file.
 
-2.  [cite\_start]**Speech-to-Text (STT)**: The recorded audio is processed by the `tts` function [cite: 4][cite\_start], which uses the **Groq API** to access the `whisper-large-v3` model for fast and accurate transcription[cite: 1, 4].
+2.  **Speech-to-Text (STT)**: The recorded audio is processed by the `tts` function, which uses the **Groq API** to access the `whisper-large-v3` model for fast and accurate transcription.
 
-3.  [cite\_start]**Image Encoding**: The uploaded image is converted into a Base64 string by the `sext` function[cite: 2]. [cite\_start]This format is required for inclusion in the API request to the vision model[cite: 2].
+3.  **Image Encoding**: The uploaded image is converted into a Base64 string by the `sext` function. This format is required for inclusion in the API request to the vision model.
 
-4.  [cite\_start]**Multimodal Analysis**: The transcribed text and the encoded image are sent to the **Groq API** to be analyzed by the `meta-llama/llama-4-scout-17b-16e-instruct` model[cite: 1, 2]. [cite\_start]A detailed system prompt instructs the model to act as a professional doctor, analyze the image in a medical context, and provide a concise, two-sentence response in a single paragraph[cite: 1].
+4.  **Multimodal Analysis**: The transcribed text and the encoded image are sent to the **Groq API** to be analyzed by the `meta-llama/llama-4-scout-17b-16e-instruct` model. A detailed system prompt instructs the model to act as a professional doctor, analyze the image in a medical context, and provide a concise, two-sentence response in a single paragraph.
 
-5.  [cite\_start]**Text-to-Speech (TTS)**: The AI's text response is passed to the `texi` function [cite: 3][cite\_start], which uses the **Google Text-to-Speech (gTTS)** library to convert the text into a natural-sounding audio file[cite: 1, 3].
+5.  **Text-to-Speech (TTS)**: The AI's text response is passed to the `texi` function, which uses the **Google Text-to-Speech (gTTS)** library to convert the text into a natural-sounding audio file.
 
-6.  [cite\_start]**Output**: The Gradio interface is updated to display the user's transcribed question, the AI doctor's text response, and an audio player to listen to the spoken diagnosis[cite: 1].
+6.  **Output**: The Gradio interface displays the user's transcribed question, the AI doctor's text response, and an audio player to listen to the spoken diagnosis.
 
 -----
 
 ## 🛠️ Technology Stack
 
-  * [cite\_start]**UI Framework**: Gradio [cite: 1]
-  * [cite\_start]**AI Service Provider**: Groq API [cite: 2, 4]
-  * [cite\_start]**Vision & Reasoning LLM**: Meta Llama 4 Scout [cite: 1, 2]
-  * [cite\_start]**Speech-to-Text Model**: Whisper V3 [cite: 1, 4]
-  * [cite\_start]**Text-to-Speech Engine**: gTTS (Google Text-to-Speech) [cite: 3]
-  * [cite\_start]**Audio Libraries**: pydub, speechrecognition [cite: 4]
+  * **UI Framework**: Gradio
+  * **AI Service Provider**: Groq API
+  * **Vision & Reasoning LLM**: Meta Llama 4 Scout
+  * **Speech-to-Text Model**: Whisper V3
+  * **Text-to-Speech Engine**: gTTS (Google Text-to-Speech)
+  * **Audio Libraries**: pydub, speechrecognition
   * **Core Language**: Python
 
 -----
@@ -78,7 +83,7 @@ Follow these instructions to set up and run the project locally.
     pip install -r requirements.txt
     ```
 
-4.  [cite\_start]**Set up Environment Variables:** The application requires a Groq API key to function[cite: 1, 2, 4]. Create a file named `.env` in the root directory of the project and add your API key:
+4.  **Set up Environment Variables:** The application requires a Groq API key to function. Create a file named `.env` in the root directory of the project and add your API key:
 
     *`.env` file*:
 
