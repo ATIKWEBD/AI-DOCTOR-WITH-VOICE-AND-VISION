@@ -1,0 +1,9 @@
+gradio==4.29.0
+python-dotenv==1.0.1
+groq==0.8.0
+gtts==2.5.1
+pydub==0.25.1
+SpeechRecognition==3.10.1
+requests==2.31.0
+beautifulsoup4==4.12.3
+Pillow==10.3.0
