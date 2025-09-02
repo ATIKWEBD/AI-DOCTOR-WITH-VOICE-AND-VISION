@@ -1,8 +1,5 @@
-The \`\` tags appear because my instructions require me to cite the source for any information I use. [cite\_start]In this case, all the technical details in the README were taken directly from the `.py` files you provided, so I added citations to show where I got the information[cite: 1, 2, 3, 4].
+<img width="1618" height="876" alt="image" src="https://github.com/user-attachments/assets/2f813e4d-09bb-43c3-b286-f473a63c4959" />
 
-You can simply delete them after you copy the text.
-
-However, to make it easier for you, here is the complete README section again, completely clean and without any citation tags.
 
 # 🤖 AI Doctor with Vision and Voice
 
@@ -52,7 +49,7 @@ Follow these instructions to set up and run the project locally.
 1.  **Clone the repository:**
 
     ```sh
-    git clone https://github.com/your-username/ai-doctor-vision-voice.git
+    git clone https://github.com/ATIKWEBD/AI-DOCTOR-WITH-VOICE-AND-VISION.git
     cd ai-doctor-vision-voice
     ```
 
